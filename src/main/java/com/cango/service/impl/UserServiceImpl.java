@@ -1,6 +1,6 @@
 package com.cango.service.impl;
 
-import com.cango.mapper.EnjoyUserMapper;
+import com.cango.mapper.user.EnjoyUserMapper;
 import com.cango.model.EnjoyUser;
 import com.cango.service.IUserService;
 import org.springframework.stereotype.Service;

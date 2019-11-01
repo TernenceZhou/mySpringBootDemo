@@ -1,13 +1,26 @@
 spring:
   datasource:
-    url:  jdbc:mysql://127.0.0.1:3306/xiangxue?serverTimezone=GMT%2B8
-    driver-class-name: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver
-    username: root
-    password: 123456
+      spring: #数据源1
+          jdbc-url:  jdbc:mysql://127.0.0.1:3306/xiangxue?serverTimezone=GMT%2B8
+          driverClassName: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver
+          username: root
+          password: 123456
+      spring2: #数据源2
+          jdbc-url:  jdbc:mysql://127.0.0.1:3306/xiangxue2?serverTimezone=GMT%2B8
+          driverClassName: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver
+          username: root
+          password: 123456
+#        说明
+#        <1> 数据库配置文件可以都放在application.yml文件中
+#        <2>springBoot2.x使用JDBC连接数据库需要将url改为jdbc-url
+#        <3>添加JDBC驱动名称由原来的com.mysql.jdbc.Driver改为
+#        com.mysql.cj.jdbc.Driver
+#        <4>配置多数据源和配置单数据源没有什么区别，使用primary和secondary来标注不同的数据源；（名字也可以换掉）
   mvc:
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
 mybatis:
   mapper-locations: classpath:mapping/*.xml
-
+server:
+  port:  8088

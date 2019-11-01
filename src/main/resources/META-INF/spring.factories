@@ -1,0 +1,8 @@
+
+#自定义springboot启动时候加载的相关类
+#org.springframework.context.ApplicationContextInitializer=\
+#com.cango.config.application.MyApplicationContextInitializer
+#
+#org.springframework.boot.SpringApplicationRunListener=\
+#com.cango.config.application.MySpringApplicationRunListener
+

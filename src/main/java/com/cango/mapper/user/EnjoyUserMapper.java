@@ -1,4 +1,4 @@
-package com.cango.mapper;
+package com.cango.mapper.user;
 
 import com.cango.model.EnjoyUser;
 import org.apache.ibatis.annotations.Param;

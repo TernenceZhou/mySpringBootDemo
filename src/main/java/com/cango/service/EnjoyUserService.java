@@ -3,7 +3,7 @@ package com.cango.service;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import com.cango.model.EnjoyUser;
-import com.cango.mapper.EnjoyUserMapper;
+import com.cango.mapper.user.EnjoyUserMapper;
 @Service
 public class EnjoyUserService{
 
